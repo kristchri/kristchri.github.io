@@ -1,0 +1,21 @@
+@charset "utf-8";
+.background	{
+	width: auto;
+	height: auto;
+}
+
+.text	{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: medium;
+	line-height: normal;
+	text-align: center;
+}
+
+.heading	{
+	color: #51B983;
+	margin-right: 400px;
+	margin-left: 400px;
+}
