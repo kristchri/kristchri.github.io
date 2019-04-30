@@ -5,4 +5,42 @@ h1 {text-align: center;
 	color: #51B983;
 	margin-right: 400px;
 	margin-left: 400px;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	border-style: dotted }
+input[type=text], select, textarea
+{ width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;}
+
+input[type=submit] {
+  background-color: #FF7600;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;}
+
+input[type=submit]:hover
+{background-color: #51B983;}
+
+.container
+{ border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+margin-left: 25%;
+margin-right: 25%;}
+
+.text	{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: medium;
+	line-height: normal;
+	text-align: center;
+}

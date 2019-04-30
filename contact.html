@@ -2,9 +2,81 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Contact</title>
+<title>Contacts</title>
+	<link href="css/contact.css" rel="stylesheet" type="text/css">
+	<style>
+	body {
+		margin: inherit;
+		}
+	ul {
+	list-style-type: none;
+	margin: inherit;
+	padding: inherit;
+	width: 15%;
+	background-color: #FF7600;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	color: #51B983;
+	}
+		
+li a {
+	display: block;
+	color: #FFFFFF;
+	padding: 8px 16px;
+	text-decoration: none;
+		}
+
+li a.active {
+ background-color: #51B983;
+ color: white;
+		}
+		
+li a:hover:not(.active) {
+	background-color: #51B983;
+	color: white;
+		}
+p {
+	font-size: medium;
+	text-align: justify;
+	margin-right: 25%;
+	margin-left: 25%;
+		}
+</style>
 </head>
 
-<body>
+<body class="text">
+	<div>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li class="active"><a href="contact.html">Contact</a></li>
+		<li><a href="locations.html">Locations</a></li>
+	</ul>
+	</div>
+		 
+	<h1>Contact Form  </h1>
+	
+	
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Subject:</label>
+    <input type="text" id="subject" name="firstname" placeholder="Subject/Topic..">
+
+    <label for="subject">Questions/Comments:</label>
+	<textarea id="questionscomments" name="subject" placeholder="Any Comments and Questions are Appreciated!" style="height:200px"></textarea>
+   
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+			
 </body>
 </html>
