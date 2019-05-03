@@ -3,45 +3,140 @@
 <head>
 <meta charset="utf-8">
 <title>Contacts</title>
-	<link href="css/contact (1).css" rel="stylesheet" type="text/css">
+	<link href="css/contact.css" rel="stylesheet" type="text/css">
+	<link href="css/navigation.css" rel="stylesheet" type="text/css">
 	<style>
-	body {
-		margin: inherit;
-		}
-	ul {
-	list-style-type: none;
-	margin: inherit;
-	padding: inherit;
-	width: 15%;
-	background-color: #FF7600;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
-	color: #51B983;
-	}
-		
-li a {
-	display: block;
-	color: #FFFFFF;
-	padding: 8px 16px;
-	text-decoration: none;
-		}
-
-li a.active {
- background-color: #51B983;
- color: white;
-		}
-		
-li a:hover:not(.active) {
-	background-color: #51B983;
-	color: white;
-		}
+	
 p {
 	font-size: medium;
 	text-align: justify;
 	margin-right: 25%;
 	margin-left: 25%;
 		}
+		
+		
+		
+	 {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color:  #FF7600;
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 30%;
+  height: 100px; 
+  background:  #51B983;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: up; right:
+  padding: 20px;
+  width: 100%;
+  background-color:  ;
+  height: 100px;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #DCDCDC;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }	
+		
+		
+		
+			}
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 25%;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 </style>
 </head>
 
@@ -51,7 +146,6 @@ p {
 	  <li><a href="index.html">Home</a></li>
 		<li><a href="about.html">About</a></li>
 		<li class="active"><a href="contact.html" class="active">Contact</a></li>
-		<li><a href="locations.html">Locations</a></li>
 	</ul>
 	</div>
 		 
@@ -77,6 +171,85 @@ p {
     <input type="submit" value="Submit">
   </form>
 </div>
-			
+		
+	
+	
+    
+    
+	
+
+	
+	
+
+<header>
+  <h2>Donating for a Better Cause!</h2>
+</header>
+
+<section>
+  
+  
+	<input type="submit" value="Donation Link">
+	
+  
+  
+  <article>
+    <h1>Helping Out Our Community</h1>
+    <p>Here at Brothers and Sisters Of Aiken County we want to provide outstanding and many more opportunities for all, We would very much appreciate it if you could lend us a helping hand. Thank You! </p>
+  </article>
+</section>
+<div>
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="resources/save_children.jfif" alt="save_children" style="width:100%">
+  <div class="text">securityfederalbank.com</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="resources/aiken_proud.jfif" alt="aiken_proud_community" style="width:100%">
+  <div class="text">aikenbellamagazine</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="resources/helping_hands.jfif" alt="helping_hands" style="width:50%">
+  <div class="text">aikenbellamagazine</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+	</div>
+
+	
 </body>
 </html>
