@@ -1,0 +1,53 @@
+@charset "utf-8";
+.background	{
+	width: auto;
+	height: auto;
+}
+
+.text	{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-align: center;
+	font-size: 100%;
+}
+
+.heading	{
+	color: #51B983;
+	margin-right: 400px;
+	margin-left: 400px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+.h1 {
+	text-align: center;
+	color: #51B983;
+	margin-right: 400px;
+	margin-left: 400px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	border-style: dotted;
+	font-size: 250%;
+}
+
+.text2
+{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-align: center;
+	font-size: 100%;
+}
+
+.text3
+{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	text-align: justify;
+	font-size: 100%;
+}
